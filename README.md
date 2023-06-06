@@ -25,26 +25,19 @@ Once the valid (sound) part reached **min length** since last slice and a silent
 
 ## Requirements
 
-### If you are using Python API
-
-```bash
-pip install numpy
-```
-
-### If you are using CLI
-
-```shell
-pip install librosa
-pip install soundfile
-```
-
-or
-
 ```shell
 pip install -r requirements.txt
 ```
 
 ## Usage
+
+### Using webui
+
+```shell
+python webui.py
+```
+
+Then open http://127.0.0.1:7860 in your browser.
 
 ### Using Python API
 
@@ -109,4 +102,3 @@ The maximum silence length kept around the sliced audio, presented in millisecon
 ## Performance
 
 This script runs over 400x faster than real-time on an Intel i7 8750H CPU. Speed may vary according to your CPU and your disk. Though `Slicer` is thread-safe, multi-threading does not seem neccessary due to the I/O bottleneck.
-
