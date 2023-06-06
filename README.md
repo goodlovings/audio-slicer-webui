@@ -1,3 +1,5 @@
+[中文文档](./README.zh-CN.md)
+
 # Audio Slicer
 
 Python script that slices audio with silence detection
